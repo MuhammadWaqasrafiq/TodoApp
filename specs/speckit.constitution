@@ -1,0 +1,22 @@
+# speckit.constitution
+
+## 1. Language and Runtime
+- **Language:** Python
+- **Version:** 3.13 or newer
+
+## 2. Code Style and Quality
+- **Style Guide:** Adherence to PEP 8.
+- **Principles:** Follow Clean Code principles (e.g., meaningful names, single-responsibility functions).
+- **Linter:** Use a standard linter like Ruff or Flake8 to enforce style.
+
+## 3. Architecture
+- **Design:** Modular and class-based design.
+- **Separation of Concerns:** Business logic should be separate from the user interface (console interaction).
+
+## 4. Testing
+- **Framework:** Pytest should be used for unit tests.
+- **Coverage:** Aim for high test coverage on business logic.
+
+## 5. Documentation
+- **Docstrings:** Use Google-style docstrings for all modules, classes, and functions.
+- **Comments:** Add comments only to explain complex logic, not to describe what the code does.

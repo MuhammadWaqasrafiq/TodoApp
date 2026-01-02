@@ -1,0 +1,28 @@
+# speckit.specify
+
+## Project: In-Memory Python To-Do Console App
+
+### R-001: Add Task
+- The user must be able to add a new task.
+- Each task requires a `title` (string) and a `description` (string).
+- A unique ID must be automatically generated for each new task.
+- A new task defaults to a "Pending" completion status.
+
+### R-002: View All Tasks
+- The user must be able to view a list of all existing tasks.
+- The display should include each task's ID, title, description, and completion status.
+
+### R-003: Update Task
+- The user must be able to update the `title` and `description` of an existing task.
+- The task to be updated is identified by its ID.
+- If no task with the given ID is found, an appropriate error message should be displayed.
+
+### R-004: Delete Task
+- The user must be able to delete a task by its ID.
+- If no task with the given ID is found, an appropriate error message should be displayed.
+
+### R-005: Toggle Task Completion
+- The user must be able to change the completion status of a task by its ID.
+- If the task is "Pending", it should be marked as "Done".
+- If the task is "Done", it should be marked as "Pending".
+- If no task with the given ID is found, an appropriate error message should be displayed.

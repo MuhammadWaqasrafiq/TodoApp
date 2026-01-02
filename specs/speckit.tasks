@@ -1,0 +1,20 @@
+# speckit.tasks
+
+### Phase 1: Core Logic and Console UI
+
+- **T-001:** Setup project structure: create `src` and `specs` directories.
+- **T-002:** Define the `Task` data class in `src/task.py`.
+- **T-003:** Implement the `TodoManager` class skeleton in `src/todo_manager.py`.
+- **T-004:** Implement the `add_task` method in `TodoManager`.
+- **T-005:** Implement the `get_all_tasks` method in `TodoManager`.
+- **T-006:** Implement the `find_task_by_id` helper method in `TodoManager`.
+- **T-007:** Implement the `update_task` method in `TodoManager`.
+- **T-008:** Implement the `delete_task` method in `TodoManager`.
+- **T-009:** Implement the `toggle_task_completion` method in `TodoManager`.
+- **T-010:** Create the main application loop and menu in `src/main.py`.
+- **T-011:** Integrate `TodoManager.add_task` with the UI in `main.py`.
+- **T-012:** Integrate `TodoManager.get_all_tasks` with the UI in `main.py`.
+- **T-013:** Integrate `TodoManager.update_task` with the UI in `main.py`.
+- **T-014:** Integrate `TodoManager.delete_task` with the UI in `main.py`.
+- **T-015:** Integrate `TodoManager.toggle_task_completion` with the UI in `main.py`.
+- **T-016:** Add basic error handling and user feedback in `main.py`.

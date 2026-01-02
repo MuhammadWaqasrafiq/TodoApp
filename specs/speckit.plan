@@ -1,0 +1,35 @@
+# speckit.plan
+
+## 1. High-Level Architecture
+- **Pattern:** Class-based architecture.
+- **Data Storage:** An in-memory Python list will be the single source of truth for storing task objects. No database or file persistence in this phase.
+- **Core Components:**
+  - A `Task` class to model individual to-do items (attributes: id, title, description, status).
+  - A `TodoManager` class to encapsulate all business logic (CRUD operations) and manage the in-memory list of tasks.
+  - A main execution script (`main.py`) to handle the console user interface (UI) and user input, delegating all actions to the `TodoManager`.
+
+## 2. Class Definitions
+### `Task` Class
+- **Attributes:**
+  - `id`: `int` (unique identifier)
+  - `title`: `str`
+  - `description`: `str`
+  - `completed`: `bool` (True for "Done", False for "Pending")
+
+### `TodoManager` Class
+- **Attributes:**
+  - `_tasks`: `list[Task]` (private list to store tasks)
+  - `_next_id`: `int` (private counter to generate unique IDs)
+- **Methods:**
+  - `add_task(title, description) -> Task`
+  - `get_all_tasks() -> list[Task]`
+  - `find_task_by_id(task_id) -> Task | None`
+  - `update_task(task_id, new_title, new_description) -> Task | None`
+  - `delete_task(task_id) -> bool`
+  - `toggle_task_completion(task_id) -> Task | None`
+
+## 3. UI Flow (`main.py`)
+- The application will run in a loop, presenting a menu of options to the user.
+- The menu will include: "Add Task", "View All Tasks", "Update Task", "Delete Task", "Mark Task Complete", and "Exit".
+- User input will be captured to determine which action to perform.
+- The script will instantiate `TodoManager` and call its methods based on user commands.
